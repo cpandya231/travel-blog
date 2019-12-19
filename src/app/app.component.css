@@ -19,11 +19,13 @@ aside{
     padding-top: 40px;
     background-color:#f7f7f7 ;
     text-align: center;
+    height: 100%;
 }
 
 .sports-icon-list {
     background-color: #333;
     padding-bottom: 40px;
+    padding-top: 40px;
 }
 
 .sports-icon-list a{
