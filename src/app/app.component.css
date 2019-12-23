@@ -2,8 +2,22 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 body{
     font-family: 'Open Sans', sans-serif;
+    
 }
-header,footer{
+
+header{
+    padding-top: 80px;
+}
+
+nav img{
+    height: 3em;
+    width: 17em;
+}
+.bg-dark {
+    background-color: #333 !important;
+    padding: 20px;
+}
+footer{
     background-color: #333;
     color: #ddd;
     text-align: center;
@@ -19,24 +33,29 @@ aside{
     padding-top: 40px;
     background-color:#f7f7f7 ;
     text-align: center;
-    height: 100%;
+    
 }
 
 .sports-icon-list {
     background-color: #333;
     padding-bottom: 40px;
     padding-top: 40px;
+    
 }
+
 
 .sports-icon-list a{
    color: white;
-    
+   display: inline-block;
+   margin-left: 10px;
 }
+
+
 
 .sports-icon-list a img{
     width: 70px;
     height: 70px;
-     
+    
  }
 .range-title{
     
@@ -61,4 +80,48 @@ article img{
 article p{
     font-size: 20px;
     
+}
+
+@media(max-width: 767px){
+
+    .sports-icon-list {
+        background-color: #333;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        
+    }
+    
+    .sports-icon-list a img{
+        width: 30px;
+        height: 30px;
+     }
+     .sports-icon-list a h6{
+        font-size: 70%;
+     }
+
+     .sports-icon-list a{
+        display: inline-block;
+        margin-left: 10px;
+     }
+     .range-list a  {
+        display: block;
+        }
+     
+     .range-list img {
+        width: 33%;
+        height: 33%;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        }
+     .range-list  h5{
+        display: inline;
+        font-size: 18px;
+        margin-right: 10px;
+        margin-left: 10px;
+      
+      
+        }
+
 }
