@@ -1,7 +1,9 @@
 header{
-    padding-top: 60px;
+    padding-top: 80px;
 }
-
+img{
+    background-blend-mode: lighten;
+}
 .navbar {
     -webkit-transition: all 0.6s ease-out;
     -moz-transition: all 0.6s ease-out;

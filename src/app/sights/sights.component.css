@@ -1,0 +1,24 @@
+
+header{
+    padding-top: 0px;
+}
+.fill-screen{
+   
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 50em;
+    width: 100em;
+}
+.content-filler{
+    min-height:350px;
+}
+
+.content-attached{
+    background-attachment: fixed;
+}
+@media(max-width:1024px){
+    .content-attached{
+        background-attachment: scroll;
+    }   
+}

@@ -22,6 +22,7 @@
     "bootstrap": "^4.0.0-beta",
     "jQuery": "^1.7.4",
     "jquery": "^3.4.1",
+    "jquery.waitforimages": "^2.4.0",
     "popper.js": "^1.16.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
