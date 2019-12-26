@@ -5,8 +5,8 @@ import { SightsComponent } from './sights/sights.component';
 
 
 const routes: Routes = [
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
+  {path: '', redirectTo: '/sites', pathMatch: 'full'},
+  {path: 'blog', component: HomeComponent},
   {path: 'sites', component: SightsComponent},
 ];
 
