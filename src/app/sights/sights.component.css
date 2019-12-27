@@ -17,6 +17,12 @@ header{
 .content-attached{
     background-attachment: fixed;
 }
+.down-arrow{
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 50%;
+    color: white;
+}
 
 .text-banner h1{
 margin-left: auto;
