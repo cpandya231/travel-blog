@@ -22,5 +22,13 @@ export class AppComponent implements AfterViewInit {
         });
     });
 }
+onActivate(event) {
+  window.scroll(0,0);
+  
+  if (event.constructor.name==="HomeComponent"){ // for example
+    $('.navbar').addClass('active');
+}
+  
+}
   
 }

@@ -20,7 +20,7 @@ export class SightsComponent implements AfterViewInit {
         
       })
 
-    
+      // $('body').scrollspy({ target: '.navbar' })
       
     })
 }

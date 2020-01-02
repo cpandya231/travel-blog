@@ -1,3 +1,6 @@
+body{
+    position: relative;
+}
 header{
     padding-top: 80px;
 }
@@ -23,7 +26,9 @@ img{
     
     color: ivory;
 }
-
+.nav-pills > li > a.active {
+    background-color: rgb(68, 68, 68)!important;
+}
 .bg-dark.scrolled {
     background-color: #333 !important;
     padding: 15px;

@@ -17,10 +17,11 @@ header{
 .content-attached{
     background-attachment: fixed;
 }
-.down-arrow{
+.down-button{
     position: absolute;
-    margin-left: 50%;
-    margin-top: 50%;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
     color: white;
 }
 

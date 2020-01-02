@@ -5,13 +5,13 @@ import { SightsComponent } from './sights/sights.component';
 
 
 const routes: Routes = [
-  {path: '', redirectTo: '/sites', pathMatch: 'full'},
+  {path: '',  component: SightsComponent, pathMatch: 'full'},
   {path: 'blog', component: HomeComponent},
   {path: 'sites', component: SightsComponent},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{scrollPositionRestoration: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

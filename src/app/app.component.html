@@ -1,4 +1,4 @@
-<header>
+<header id="top">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <a routerLink="/" id="brand-logo">
       
@@ -9,26 +9,29 @@
     </button>
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-auto nav-pills red"  role="tablist">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/blog">Blog</a>
+          <a class="nav-link" href="#top">Home</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="#">Sports</a>
+          <a class="nav-link" href="#sports">Sports</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Activities</a>
+          <a class="nav-link" href="#activities">Activities</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
+          <a class="nav-link" href="#bottom">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/blog" href="#blog">Blog</a>
         </li>
       </ul>
      
     </div>
   </nav>
 </header>
-<router-outlet></router-outlet>
-<footer class="container-fluid">
+<router-outlet (activate)="onActivate($event)"></router-outlet>
+<footer class="container-fluid" id="bottom">
   <h1>FOOTER</h1>
 </footer>
 
