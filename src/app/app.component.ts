@@ -1,5 +1,7 @@
-import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, ElementRef, Inject } from '@angular/core';
 import * as $ from 'jquery';
+import { PageScrollService } from 'ngx-page-scroll-core';
+import { DOCUMENT } from '@angular/common';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,6 +11,10 @@ export class AppComponent implements AfterViewInit {
   
   
   title = 'css-bootstrap';
+
+  constructor(private pageScrollService: PageScrollService, @Inject(DOCUMENT) private document: any) {
+  }
+  
   ngAfterViewInit() {
     $(document).ready(function() {
       
@@ -25,10 +31,13 @@ export class AppComponent implements AfterViewInit {
 onActivate(event) {
   window.scroll(0,0);
   
-  if (event.constructor.name==="HomeComponent"){ // for example
-    $('.navbar').addClass('active');
 }
-  
+scrollToElement(id:string){
+  this.pageScrollService.scroll({
+    document: this.document,
+    scrollTarget: "#"+id,
+  });
 }
+
   
 }
