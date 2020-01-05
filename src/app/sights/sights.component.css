@@ -1,6 +1,6 @@
 
 header{
-    padding-top: 0px;
+    padding-top: 20px;
 }
 .fill-screen{
    
@@ -8,7 +8,7 @@ header{
     background-repeat: no-repeat; 
     background-size: cover;
     height: 50em;
-    width: 100em;
+    width: 100%;
 }
 .content-filler{
     min-height:350px;

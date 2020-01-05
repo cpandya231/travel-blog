@@ -25,8 +25,6 @@ export class SightsComponent implements AfterViewInit, OnInit {
 
     })
   }
-
-
  
   setVideoURL(videoURL) {
     return this._sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/" + videoURL);

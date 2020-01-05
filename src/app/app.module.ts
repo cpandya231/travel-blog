@@ -7,6 +7,8 @@ import { SightsComponent } from './sights/sights.component';
 import { HomeComponent } from './home/home.component';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { ParallaxModule, ParallaxConfig } from 'ngx-parallax';
+import { NgwWowModule } from 'ngx-wow';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,11 @@ import { NgxPageScrollModule } from 'ngx-page-scroll';
     BrowserModule,
     AppRoutingModule,
     NgxPageScrollCoreModule.forRoot({duration: 1250}),
-    NgxPageScrollModule
+    NgxPageScrollModule,
+    ParallaxModule,
+    NgwWowModule
+
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

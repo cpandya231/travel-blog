@@ -5,15 +5,19 @@
 
         <div class="row content-filler">
         </div> -->
-        <div class="fill-screen content-attached" style=" background-image: url(../../assets/lake.jpg)">
+        <div class="fill-screen content-attached" 
+        style=" background-image: url(../../assets/lake.jpg)"
+        parallax 
+        [config]="{initialValue: -100, ratio: .2}"
+        >
             <a class="btn" href="#sports" pageScroll>
                 <div class="down-button">
                     <i class="fa fa-arrow-circle-down fa-4x" aria-hidden="true"></i>
                 </div>
-            </a>
+            </a>    
 
         </div>
-        <div class="row text-banner" id="sports">
+        <div class="row text-banner" id="sports" >
             <h1>VISIT THE ROCKY MOUNTAINS</h1>
             <p>Welcome to where the US takes on truly epic proportions.
                 Here in Colorado, Wyoming, Montana and Idaho, the Great Plains of the American West collide with
@@ -23,18 +27,18 @@
         <div class="fill-screen content-attached" style=" background-image: url(../../assets/elk.jpg)">
         </div>
 
-        <section class="row activity-section" id="activities">
-            <div class="col-md-4 activity-item">
+        <section class="row activity-section wow fadeInDown" id="activities">
+            <div class="col-md-4 activity-item ">
                 <img src="../../assets/map.png" />
                 <h2>Orienteering</h2>
                 <p>Do some Orienteering.</p>
             </div>
-            <div class="col-md-4 activity-item">
+            <div class="col-md-4 activity-item ">
                 <img src="../../assets/pic.png" />
                 <h2>Rock Climbing</h2>
                 <p>Do some rock climbing.</p>
             </div>
-            <div class="col-md-4 activity-item">
+            <div class="col-md-4 activity-item ">
                 <img src="../../assets/backpack.png" />
                 <h2>Backpacking</h2>
                 <p>Do some Backpacking.</p>
